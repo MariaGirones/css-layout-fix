@@ -3,21 +3,33 @@ body {
     font-family: Arial;
 }
 
-/* Header está desalineado */
+/* Header */
 .header {
-    background: lightgray;
-    padding: 5px;
-    text-align: left;
+    background: #f4f4f4; 
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-/*containers agregados*/
+.header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
 }
 
-/*Tarjetas estilizadas*/
+/* Cards Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Card */
 .card {
     background: white;
     padding: 16px;
@@ -25,29 +37,28 @@ body {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Título más limpio */
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Text Structure */
 .card h2 {
     font-size: 1.2rem;
     margin: 12px 0 6px 0;
 }
 
-/* Texto más legible */
 .card p {
     color: #444;
     line-height: 1.4;
     margin-bottom: 12px;
+    flex-grow: 1;
 }
 
-/*Grid arreglado*/
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-/*Tarjetas con tamaño y spacing*/
+/* Image */
 .card img {
     width: 100%;
     height: auto;
@@ -55,7 +66,7 @@ body {
     border-radius: 6px;
 }
 
-/*button arreglado*/
+/* Button */
 .card button {
     width: 100%;
     padding: 10px;
@@ -72,7 +83,7 @@ body {
     background: #005fa3;
 }
 
-/* Footer estilizado */
+/* Footer */
 .footer {
     background: #f0f0f0;
     padding: 20px 0;
@@ -82,4 +93,5 @@ body {
     font-size: 0.9rem;
     border-top: 1px solid #ddd;
 }
+
 
