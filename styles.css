@@ -1,0 +1,46 @@
+/* CSS intencionalmente roto */
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Header está desalineado */
+.header {
+    background: lightgray;
+    padding: 5px;
+    text-align: left;
+}
+
+/* Grid mal hecho */
+.cards {
+    display: flex;
+    flex-direction: column; /* debería ser grid o flex row */
+    gap: 10px;
+    padding: 5px;
+}
+
+/* Las tarjetas no tienen tamaño ni spacing */
+.card {
+    border: 3px solid red;
+    padding: 5px;
+    width: 100%;
+}
+
+/* Imagen desbordada */
+.card img {
+    width: 500px; /* rompe todo */
+}
+
+/* Botón pegado al borde */
+button {
+    margin: 0;
+    padding: 3px;
+}
+
+/* Footer pegado al contenido y sin estilo */
+.footer {
+    background: lightgray;
+    padding: 3px;
+    text-align: center;
+}
