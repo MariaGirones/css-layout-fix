@@ -1,18 +1,36 @@
+main {
+    padding: 40px 0;
+}
+
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
 }
 
-/* Header */
+/* Header refinado */
 .header {
-    background: #f4f4f4; 
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    background: #ffffff;
+    padding: 24px 0;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
 }
 
+/* Centramos el contenido del header */
+.header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título del header */
 .header h1 {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #222;
+    text-align: center;
 }
 
 /* Container */
@@ -93,5 +111,3 @@ body {
     font-size: 0.9rem;
     border-top: 1px solid #ddd;
 }
-
-
